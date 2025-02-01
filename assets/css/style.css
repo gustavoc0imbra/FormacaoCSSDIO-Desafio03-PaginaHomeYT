@@ -1,0 +1,46 @@
+@import url("./global.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template: "header header header" 10% "sidebar main main" 5fr / 1fr 2fr 2fr;
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+aside nav a {
+    text-decoration: none;
+}
+
+main {
+    grid-area: main;
+    gap: 1rem;
+    padding: 1.25rem;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+}
+
+.card .card-header {
+    width: 100%;
+    height: 50%;
+}
+
+.card .card-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
