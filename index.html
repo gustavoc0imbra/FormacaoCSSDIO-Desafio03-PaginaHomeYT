@@ -8,83 +8,272 @@
 </head>
 <body>
     <header>
-        <div class="menu">
-            <img src="" alt="Menu">
-            <img src="" alt="YouTube Logo">
+        <div class="menu-container">
+            <img id="menu-hamburguer" src="./assets/images/menu.png" alt="Menu">
+            <img id="menu-youtube-logo" src="./assets/images/youtube-logo.png" alt="YouTube Logo">
         </div>
         
         <div class="search-container">
-            <input type="text">
-            <button>
-                <img src="" alt="Search">
+            <input id="search-input" type="text">
+            <button type="button" id="search-button">
+                <img src="./assets/images/search.png" alt="Search">
             </button>
         </div>
         
         <div class="account-container">
-            <img src="" alt="Upload Video">
-            <img src="" alt="Notifications">
-            <img src="" alt="User-vatar">
+            <img id="account-upload-icon" src="./assets/images/video.png" alt="Upload Video">
+            <img id="account-notification-icon" src="./assets/images/bell.png" alt="Notifications">
+            <img id="account-avatar-icon" src="./assets/images/profile.png" alt="User Avatar">
         </div>
     </header>
     <aside>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Explorar</a></li>
-                <li><a href="#">Inscrições</a></li>
-                <li><a href="#">YouTube Music</a></li>
-                <li><a href="#">Vídeos que gostei</a></li>
-                <li><a href="#">Assistir mais tarde</a></li>
-                <li><a href="#">Downloads</a></li>
-                <li><a href="#">Filmes</a></li>
-                <li><a href="#">Aprender</a></li>
-                <li><a href="#">Esportes</a></li>
-            </ul>
-        </nav>
+        <menu class="sidebar">
+            <li class="sidebar-link" id="home">
+                <img class="sidebar-link-img" src="./assets/images/home.png">
+                <a class="sidebar-link-text" href="#">Início</a>
+            </li>
+            <li class="sidebar-link" id="explore">
+                <img class="sidebar-img" src="./assets/images/compass.png">
+                <a class="sidebar-link-text" href="#">Explorar</a>
+            </li>
+            <li class="sidebar-link" id="subscriptions">
+                <img class="sidebar-img" src="./assets/images/youtube.png">
+                <a class="sidebar-link-text" href="#">Inscrições</a>
+            </li>
+            <li class="sidebar-link" id="youtube-music">
+                <img class="sidebar-img" src="./assets/images/disc.png">
+                <a class="sidebar-link-text" href="#">YouTube Music</a>
+            </li>
+            <li class="sidebar-link" id="liked-videos">
+                <img class="sidebar-img" src="./assets/images/thumbs-up.png">
+                <a class="sidebar-link-text" href="#">Vídeos que gostei</a>
+            </li>
+            <li class="sidebar-link" id="watch-later">
+                <img class="sidebar-img" src="./assets/images/clock.png">
+                <a class="sidebar-link-text" href="#">Assistir mais tarde</a>
+            </li>
+            <li class="sidebar-link" id="downloads">
+                <img class="sidebar-img" src="./assets/images/download.png">
+                <a class="sidebar-link-text" href="#">Downloads</a>
+            </li>
+            <li class="sidebar-link" id="movies">
+                <img class="sidebar-img" src="./assets/images/film.png">
+                <a class="sidebar-link-text" href="#">Filmes</a>
+            </li>
+            <li class="sidebar-link" id="learn">
+                <img class="sidebar-img" src="./assets/images/book.png">
+                <a class="sidebar-link-text" href="#">Aprender</a>
+            </li>
+            <li class="sidebar-link" id="sports">
+                <img class="sidebar-img" src="./assets/images/award.png">
+                <a class="sidebar-link-text" href="#">Esportes</a>
+            </li>
+        </menu>
     </aside>
     <main>
         <div class="card">
             <div class="card-header">
-                <img src="./assets/images/exemplo.jpg" alt="">
+                <img src="./assets/images/thumb.png" alt="">
             </div>
             <div class="card-body">
-                <img src="./assets/images/avatar.png" alt="">
-                <h2>Geração Tech Unimed - BH - Ciência de Dados</h2>
-                <p>2,1 mil visualizações</p>
-                <p>Transmitido há 2 dias</p>
+                <img class="channel-avatar" src="./assets/images/channel-avatar.png" alt="DIO">
+
+                <div class="video-info">
+                    <h2 class="video-title">Geração Tech Unimed - BH - Ciência de Dados</h2>
+                    
+                    <div class="video-stats">
+                        <p>2,1 mil visualizações</p>
+                        <p>Transmitido há 2 dias</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="card">
             <div class="card-header">
-                <img src="./assets/images/exemplo.jpg" alt="">
+                <img src="./assets/images/thumb-2.png" alt="Scrum Talks">
             </div>
             <div class="card-body">
-                <img src="./assets/images/avatar.png" alt="">
-                <h2>Geração Tech Unimed - BH - Ciência de Dados</h2>
-                <p>2,1 mil visualizações</p>
-                <p>Transmitido há 2 dias</p>
+                <img class="channel-avatar" src="./assets/images/channel-avatar.png" alt="DIO">
+
+                <div class="video-info">
+                    <h2 class="video-title">Scrum Talks</h2>
+                    
+                    <div class="video-stats">
+                        <p>1,6 mil visualizações</p>
+                        <p>Transmitido há 3 dias</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="card">
             <div class="card-header">
-                <img src="./assets/images/exemplo.jpg" alt="">
+                <img src="./assets/images/thumb-3.png" alt="">
             </div>
             <div class="card-body">
-                <img src="./assets/images/avatar.png" alt="">
-                <h2>Geração Tech Unimed - BH - Ciência de Dados</h2>
-                <p>2,1 mil visualizações</p>
-                <p>Transmitido há 2 dias</p>
+                <img class="channel-avatar" src="./assets/images/channel-avatar.png"alt="DIO" >
+
+                <div class="video-info">
+                    <h2 class="video-title">Machine Learning Avançado - Fast Track</h2>
+                    
+                    <div class="video-stats">
+                        <p>1,7 mil visualizações </p>
+                        <p>Transmitido há 4 dias</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="card">
             <div class="card-header">
-                <img src="./assets/images/exemplo.jpg" alt="">
+                <img src="./assets/images/thumb-4.png" alt="">
             </div>
             <div class="card-body">
-                <img src="./assets/images/avatar.png" alt="">
-                <h2>Geração Tech Unimed - BH - Ciência de Dados</h2>
-                <p>2,1 mil visualizações</p>
-                <p>Transmitido há 2 dias</p>
+                <img class="channel-avatar" src="./assets/images/channel-avatar.png" alt="DIO">
+
+                <div class="video-info">
+                    <h2 class="video-title">Global Skills #2 - Project Planning</h2>
+                    
+                    <div class="video-stats">
+                        <p>2,1 mil visualizações</p>
+                        <p>Transmitido há 2 dias</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="./assets/images/thumb-5.png" alt="">
+            </div>
+            <div class="card-body">
+                <img class="channel-avatar" src="./assets/images/channel-avatar.png" alt="">
+
+                <div class="video-info">
+                    <h2 class="video-title">Como aprender a programar Python do ZERO</h2>
+                    
+                    <div class="video-stats">
+                        <p>711 visualizações</p>
+                        <p>Transmitido há 2 dias</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="./assets/images/thumb.png" alt="">
+            </div>
+            <div class="card-body">
+                <img class="channel-avatar" src="./assets/images/channel-avatar.png" alt="DIO">
+
+                <div class="video-info">
+                    <h2 class="video-title">Geração Tech Unimed - BH - Ciência de Dados</h2>
+                    
+                    <div class="video-stats">
+                        <p>2,1 mil visualizações</p>
+                        <p>Transmitido há 2 dias</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="./assets/images/thumb-2.png" alt="Scrum Talks">
+            </div>
+            <div class="card-body">
+                <img class="channel-avatar" src="./assets/images/channel-avatar.png" alt="DIO">
+
+                <div class="video-info">
+                    <h2 class="video-title">Scrum Talks</h2>
+                    
+                    <div class="video-stats">
+                        <p>1,6 mil visualizações</p>
+                        <p>Transmitido há 3 dias</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="./assets/images/thumb-3.png" alt="">
+            </div>
+            <div class="card-body">
+                <img class="channel-avatar" src="./assets/images/channel-avatar.png"alt="DIO" >
+
+                <div class="video-info">
+                    <h2 class="video-title">Machine Learning Avançado - Fast Track</h2>
+                    
+                    <div class="video-stats">
+                        <p>1,7 mil visualizações </p>
+                        <p>Transmitido há 4 dias</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="./assets/images/thumb-4.png" alt="">
+            </div>
+            <div class="card-body">
+                <img class="channel-avatar" src="./assets/images/channel-avatar.png" alt="DIO">
+
+                <div class="video-info">
+                    <h2 class="video-title">Global Skills #2 - Project Planning</h2>
+                    
+                    <div class="video-stats">
+                        <p>2,1 mil visualizações</p>
+                        <p>Transmitido há 2 dias</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="./assets/images/thumb-5.png" alt="">
+            </div>
+            <div class="card-body">
+                <img class="channel-avatar" src="./assets/images/channel-avatar.png" alt="">
+
+                <div class="video-info">
+                    <h2 class="video-title">Como aprender a programar Python do ZERO</h2>
+                    
+                    <div class="video-stats">
+                        <p>711 visualizações</p>
+                        <p>Transmitido há 2 dias</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="./assets/images/thumb.png" alt="">
+            </div>
+            <div class="card-body">
+                <img class="channel-avatar" src="./assets/images/channel-avatar.png" alt="DIO">
+
+                <div class="video-info">
+                    <h2 class="video-title">Geração Tech Unimed - BH - Ciência de Dados</h2>
+                    
+                    <div class="video-stats">
+                        <p>2,1 mil visualizações</p>
+                        <p>Transmitido há 2 dias</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <img src="./assets/images/thumb-2.png" alt="Scrum Talks">
+            </div>
+            <div class="card-body">
+                <img class="channel-avatar" src="./assets/images/channel-avatar.png" alt="DIO">
+
+                <div class="video-info">
+                    <h2 class="video-title">Scrum Talks</h2>
+                    
+                    <div class="video-stats">
+                        <p>1,6 mil visualizações</p>
+                        <p>Transmitido há 3 dias</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
